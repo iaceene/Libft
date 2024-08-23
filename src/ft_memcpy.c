@@ -1,6 +1,18 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   test.c                                             :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: yaajagrou <marvin@42.fr>                   +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2024/11/11 23:05:07 by yaajagro          #+#    #+#             */
+/*   Updated: 2024/11/12 23:07:44 by yaajagro         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 #include <stdlib.h>
 
-void	*ft_memcpy(void *dest_str, const void * src_str, size_t n)
+void	*ft_memcpy(void *dest_str, const void *src_str, size_t n)
 {
 	size_t		i;
 	char		*dest;

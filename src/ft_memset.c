@@ -1,17 +1,29 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   test.c                                             :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: yaajagrou <marvin@42.fr>                   +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2024/11/11 23:05:07 by yaajagro          #+#    #+#             */
+/*   Updated: 2024/11/12 23:07:44 by yaajagro         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 #include <stdlib.h>
 
-void *ft_memset(void *s, int c, size_t n)
+void	*ft_memset(void *s, int c, size_t n)
 {
 	size_t	i;
 	char	*d;
 
 	i = 0;
 	*d = s;
-	while(i < n)
+	while (i < n)
 	{
 		*d = c;
 		d++;
 		i++;
 	}
-	return s;
+	return (s);
 }
