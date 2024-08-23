@@ -3,5 +3,5 @@
 
 int main()
 {
-    printf("%zu %zu\n", sizeof(size_t), sizeof(long unsigned int));
+    printf("%zu %zu\n", sizeof(size_t), sizeof(const char));
 }
