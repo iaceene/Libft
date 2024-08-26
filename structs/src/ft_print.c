@@ -7,7 +7,7 @@ void ft_print_node(t_list **head)
     int i = 1;
     if(tmp == NULL)
     {
-        printf("is empty!\n");
+        printf("empty!\n");
         return ;
     }
     while(tmp -> next)
