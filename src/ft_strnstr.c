@@ -10,7 +10,7 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdlib.h>
+#include "stdlib.h"
 
 static int	ft_strcheck(char *str, char *word, size_t index, size_t len)
 {
@@ -38,8 +38,10 @@ char *ft_strnstr(const char *big, const char *little, size_t len)
     size_t i;
 
     i = 0;
-	if (!big || !little)
+	if (!big)
 		return (NULL);
+	if (little[0] == '\0')
+		return ((char *)big);
 	while (i < len)
 	{
 		if(big[i] == little[0])
