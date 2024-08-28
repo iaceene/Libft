@@ -20,6 +20,8 @@ size_t	ft_strlen(const char *s);
 char	*ft_strchr(const char *s, int c);
 void    *ft_memset(void *s, int c, size_t n);
 void    *ft_memcpy(void *dest_str, const void *src_str, size_t n);
+size_t  ft_strlcpy(char *dst, const char *src, size_t size);
 int     ft_isprint(int c);
+char    *ft_strdup(const char *s);
 
 #endif
