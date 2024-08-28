@@ -10,8 +10,8 @@ int main(int c, char **v)
 
     //printf("%ld\n", ft_strlcpy(src, dst, 10));
 	//printf("%s\n", dst);
-    printf(" = %s\n", ft_strchr(src, 't' + 256));
-	printf(" = %s\n", strchr(src, 't' + 256));
+    //printf(" = %s\n", ft_strchr(src, 't' + 256));
+	//printf(" = %s\n", strchr(src, 't' + 256));
 
 
     printf("---> success ...\n");
