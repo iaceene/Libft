@@ -1,5 +1,6 @@
 FILE=$(find ../ -type f -name "*.c")
 cc $FILE -c
+cc ./main/main.c -c
 
 NAME="output"
 

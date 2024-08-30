@@ -1,5 +1,5 @@
-#include "libft.h"
-#include <string.h>
+#include "../../libft.h"
+
 
 int main(int c, char **v)
 {
