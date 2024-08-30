@@ -85,9 +85,26 @@ int main(int c, char **v)
 	printf("<%s>\n", trimed);
 	free(trimed);
 
+	// ft_substr
+	printf("%s====> ft_substr\n\n", spliter);
+	char *sub = ft_substr("yassine jagrou", 200, 5);
+	printf("<%s>\n", sub);
+	free(sub);
+	sub = ft_substr(NULL, 10, 10);
+	printf("<%s>\n", sub);
+	free(sub);
 
-
-
+	// ft_itoa
+	printf("%s====> ft_itoa\n\n", spliter);
+	sub = ft_itoa(2147483647);
+	printf("%s\n", sub);
+	free(sub);
+	sub = ft_itoa(0);
+	printf("%s\n", sub);
+	free(sub);
+	sub = ft_itoa(-2147483648);
+	printf("%s\n", sub);
+	free(sub);
 
 
 	printf("\n---> success ...\n");
