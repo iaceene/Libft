@@ -7,13 +7,26 @@ void ft_swap(char **a, char **b)
     *b = tmp;
 }
 
+int cmp(char *str1, char *str2)
+{
+    int i;
+
+    i = 0;
+    while(str1[i] && str2[i])
+    {
+        if(str1[i] > str2[i])
+            return 1;
+        i++;
+    }
+    return 0;
+}
+
 int ft_size(char **tab)
 {
     int i;
 
     i = 0;
-    while(tab[i])
-        i++;
+    while(tab[i++]);
     return i;
 }
 

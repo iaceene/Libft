@@ -8,9 +8,8 @@ int ft_any(char **tab, int(*f)(char*))
     i = 0;
     while(tab[i])
     {
-        res = f(tab[i]);
+        res = f(tab[i++]);
         if(*res != 0) return 1;
-        i++;
     }
     return 0;
 }
