@@ -1,6 +1,12 @@
 #include "../../libft.h"
 
 
+
+char  ft_lux(unsigned int index, char c)
+{
+	return c - index;
+}
+
 int main(int c, char **v)
 {
 	(void)c;
@@ -105,7 +111,35 @@ int main(int c, char **v)
 	sub = ft_itoa(-2147483648);
 	printf("%s\n", sub);
 	free(sub);
+	
+	printf("%s====> ft_strmapi\n\n", spliter);
+	char *str_mapi = ft_strmapi("holaaa", &ft_lux);
+	printf("%s\n", str_mapi);
+	free(str_mapi);
 
+	printf("%s====> ft_putchar_fd\n\n", spliter);
+	i = -1;
+	while(str[++i])
+		ft_putchar_fd(str[i], 2);
+
+
+	printf("%s====> ft_putendl_fd\n\n", spliter);
+	char newstr[] = "imane";
+	ft_putendl_fd(newstr, 1);
+
+
+	printf("%s====> ft_putnbr_fd\n\n", spliter);
+	int newnbr = 6;
+	ft_putnbr_fd(newnbr, 1);
+	ft_putchar_fd('\n', 1);
+	newnbr = 0;
+	ft_putnbr_fd(newnbr, 1);
+	ft_putchar_fd('\n', 1);
+	newnbr = 2147483647;
+	ft_putnbr_fd(newnbr, 1);
+	ft_putchar_fd('\n', 1);
+	newnbr = -2147483648;
+	ft_putnbr_fd(newnbr, 1);
 
 	printf("\n---> success ...\n");
 	return 0;

@@ -1,4 +1,5 @@
 FILE=$(find ../ -type f -name "*.c")
+Mem="-fsanitize=address"
 FLAGS="-Wall -Wextra -Werror"
 cc $FLAGS $FILE -c
 cc $FLAGS ./main/main.c -c
