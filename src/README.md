@@ -1,4 +1,3 @@
-# started on 30-aug-24 00.00 >>
 # Libft - 42 Project
 
 Libft is a custom library of standard C functions developed as part of the 42 school curriculum. The goal of this project is to recreate common standard library functions, along with a few additional utilities, to better understand how these functions work internally and to practice writing efficient, reusable code.
@@ -85,5 +84,5 @@ Simply clone these repositories and run the tests.
 Contributions are welcome! If you find any bugs or want to add new features, feel free to open an issue or create a pull request.
 
 ## License
-2024CC login is yaajagrou
+
 This project is licensed under the [MIT License](LICENSE).
