@@ -85,5 +85,5 @@ Simply clone these repositories and run the tests.
 Contributions are welcome! If you find any bugs or want to add new features, feel free to open an issue or create a pull request.
 
 ## License
-2024CC
+2024CC login is yaajagrou
 This project is licensed under the [MIT License](LICENSE).
