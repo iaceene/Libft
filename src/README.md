@@ -2,3 +2,4 @@
 # 13 days without trying to learn c
 # having trouble in c
 # making some test in typescript
+# c is amazing language
