@@ -1,5 +1,5 @@
 <h1 align="center">Libft - 42 Project</h1>
-Yassine ajagrou heere we go again
+Yassine ajagrou heere we go again me affter u
 Libft is a custom library of standard C functions developed as part of the 42 school curriculum. The goal of this project is to recreate common standard library functions, along with a few additional utilities, to better understand how these functions work internally and to practice writing efficient, reusable code.
 
 ## Table of Contents
