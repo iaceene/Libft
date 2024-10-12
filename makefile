@@ -4,12 +4,17 @@ flag = -Wall -Wextra -Werror
 ex_flag = -fsanitize=address
 main = ./main/main.c
 
-obj_file :
-	cc $(flag) $(src) $(main) -c
+all : out
+	@echo "Fin azbi hh"
 
-a.out : obj_file
-	cc $(flag) $(obj) $(main)
-	
+obj_file :
+	@cc $(flag) $(src) $(main) -c
+
+out : obj_file
+	@cc $(flag) $(obj) $(main)
 
 clean :
-	rm $(obj) main.o
+	@rm $(obj) main.o
+
+fclean :
+	@rm a.out
