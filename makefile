@@ -26,10 +26,6 @@ CC = cc
 FLAG = -Wall -Wextra -Werror
 libname = libft
 
-#testing...
-EXFLAGS = -fsanitize=address
-main = ./main/main.c
-
 
 all: $(libname).a
 
@@ -47,10 +43,4 @@ fclean: clean
 
 re: fclean all
 
-# Test rules
-test: object_files
-	@$(CC) $(FLAG) $(EXFLAGS) $(src:%.c=%.o) $(main) -o test_program
-	@rm -f $(src:%.c=%.o)
-	@echo "program compiled!"
-
-.PHONY: all clean fclean re test
+.PHONY: all clean fclean re
