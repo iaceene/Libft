@@ -5,7 +5,7 @@ ex_flag = -fsanitize=address
 main = ./main/main.c
 
 all : out
-	@echo "Fin azbi hh"
+	@echo "HI"
 
 obj_file :
 	@cc $(flag) $(src) $(main) -c
