@@ -26,7 +26,6 @@ CC = cc
 FLAG = -Wall -Wextra -Werror
 libname = libft
 
-
 all: $(libname).a
 
 $(libname).a: object_files
