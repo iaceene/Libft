@@ -6,7 +6,7 @@
 /*   By: yaajagro <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/22 17:44:28 by yaajagro          #+#    #+#             */
-/*   Updated: 2024/11/03 16:10:28 by yaajagro         ###   ########.fr       */
+/*   Updated: 2024/11/05 21:18:33 by yaajagro         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -33,8 +33,10 @@ char	*ft_strtrim(char const *s1, char const *set)
 	char	*trimed;
 	size_t	len;
 
-	if (!s1 || !set)
+	if ((!s1 && !set) || !s1)
 		return (NULL);
+	if (s1 && !set)
+		return (ft_strdup(s1));
 	start = 0;
 	index = 0;
 	len = ft_strlen(s1);

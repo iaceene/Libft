@@ -6,11 +6,13 @@
 /*   By: yaajagro <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/22 17:42:56 by yaajagro          #+#    #+#             */
-/*   Updated: 2024/11/05 20:51:19 by yaajagro         ###   ########.fr       */
+/*   Updated: 2024/11/05 21:11:49 by yaajagro         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+
+#define MAX 9223372036854775807
 
 static int	check(unsigned long long a, int s, char c)
 {
