@@ -6,7 +6,7 @@
 /*   By: yaajagro <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/23 17:07:27 by yaajagro          #+#    #+#             */
-/*   Updated: 2024/11/03 16:13:02 by yaajagro         ###   ########.fr       */
+/*   Updated: 2024/11/05 20:52:27 by yaajagro         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,6 +14,7 @@
 # define LIBFT_H
 # include <stdlib.h>
 # include <unistd.h>
+# define MAX 9223372036854775807
 
 typedef struct s_list
 {

@@ -6,7 +6,7 @@
 /*   By: yaajagro <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/22 17:44:30 by yaajagro          #+#    #+#             */
-/*   Updated: 2024/11/02 17:50:01 by yaajagro         ###   ########.fr       */
+/*   Updated: 2024/11/05 21:02:27 by yaajagro         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,7 +21,7 @@ char	*ft_substr(char const *s, unsigned int start, size_t len)
 	if (!s)
 		return (NULL);
 	if (start >= ft_strlen(s))
-		return ((char *)ft_calloc(1, sizeof(char)));
+		return (ft_strdup(""));
 	max_len = ft_strlen(s) - start;
 	if (len > max_len)
 		len = max_len;

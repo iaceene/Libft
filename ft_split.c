@@ -6,7 +6,7 @@
 /*   By: yaajagro <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/22 17:43:54 by yaajagro          #+#    #+#             */
-/*   Updated: 2024/11/02 21:56:03 by yaajagro         ###   ########.fr       */
+/*   Updated: 2024/11/05 20:52:56 by yaajagro         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -83,6 +83,8 @@ char	**ft_split(char const *s, char c)
 	int		i;
 	int		index;
 
+	if (!s)
+		return (NULL);
 	i = 0;
 	index = 0;
 	count_spiltes = ft_count((char *)s, c);

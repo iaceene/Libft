@@ -6,7 +6,7 @@
 /*   By: yaajagro <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/22 17:44:05 by yaajagro          #+#    #+#             */
-/*   Updated: 2024/11/03 16:00:20 by yaajagro         ###   ########.fr       */
+/*   Updated: 2024/11/05 20:59:22 by yaajagro         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,8 +19,12 @@ char	*ft_strjoin(char const *s1, char const *s2)
 	char	*dest;
 	int		index;
 
-	if (!s1 || !s2)
+	if (!s1 && !s2)
 		return (NULL);
+	if (s1 && !s2)
+		return (ft_strdup(s1));
+	if (!s1 && s2)
+		return (ft_strdup(s2));
 	i = 0;
 	index = 0;
 	len = ft_strlen(s1) + ft_strlen(s2);
